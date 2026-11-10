@@ -1,0 +1,21 @@
+{
+  "name": "pin-valido-calama2627",
+  "version": "1.0.0",
+  "description": "PF03 Actividad 1: TDD + Node + CI / Pin válido",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "chalk": "^6.0.1"
+  }
+}

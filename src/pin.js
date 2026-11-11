@@ -1,11 +1,7 @@
 function esPinValido(pin) {
-  if (pin === null || pin === undefined) return false
-  if (typeof pin !== 'string') return false
-  if (pin.length === 0) return false
-  if (pin.length < 4 || pin.length > 6) return false
-  if (!/^[0-9]+$/.test(pin)) return false
-  if (new Set(pin).size === 1) return false
-  return true
+  if (typeof pin !== 'string') return false   // cubre null y undefined
+  if (!/^\d{4,6}$/.test(pin)) return false    // solo dígitos y longitud 4 a 6 (rechaza también el vacío)
+  return new Set(pin).size > 1                // false si todos los dígitos son iguales
 }
 
 export { esPinValido }
